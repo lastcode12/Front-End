@@ -1,0 +1,41 @@
+
+.vip{color: gray;}
+.vip{
+    /* 0 255 */
+    /* color:rgb(200,255,0) */
+    color: #ff0;
+    font-size: 50px;
+    font-weight:bold;
+
+}
+.con{
+    /* border: 10px solid pink; */
+   
+    width: 25%;
+    display: inline-block;
+    margin:50px 25px;
+    padding: 20px ;
+
+    
+   
+    
+}
+img{
+    width: 100%;
+}
+.t{
+    color: red;
+    text-align: center;
+}
+.b{
+    width: 25%;
+    height: 40vh;
+  
+    background-color: blue;
+    border: 1px solid red;
+    
+   
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+}

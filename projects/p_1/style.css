@@ -1,0 +1,80 @@
+/* .card{
+    margin: auto;
+    width:320px;
+    max-width: 90%;
+    background-color: yellow;
+    padding:10px;
+    border-radius: 20px;
+}
+.profile-img{
+    width: 100%;
+    border-radius: 10px;
+}
+.follow-btn{
+    width: 100%;
+    background-color: rgb(51, 255, 0);
+    color:#fff;
+    height:50px;
+    font-size: larger;
+    border-radius: 10px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+.follow-btn:hover{
+    color:black;
+    /* margin-left:2px;
+    margin-top: 3px; */
+    /* transform:translateY(-5px); */
+/* }
+.bio{
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+}
+.text{
+    padding:10px;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+} */ */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f4f4f4;
+}
+
+.card {
+    width: 320px;
+    background-color: yellow;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.text {
+    padding: 10px 0;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+}
+
+.follow-btn {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(51, 255, 0);
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.follow-btn:hover {
+    transform: translateY(-2px);
+}

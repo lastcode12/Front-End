@@ -1,0 +1,29 @@
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.title {
+    text-align: center;
+    border: 5px solid black;
+}
+
+.child {
+    width: 200px;
+    padding: 10px;
+}
+
+.child img {
+    width: 100%;
+}
+
+.child .text {
+    text-align: center;
+}

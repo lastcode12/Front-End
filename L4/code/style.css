@@ -1,0 +1,31 @@
+body{
+    background-image: url("1.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.card{
+    background-color: black;
+    width:40vh;
+    margin: auto;
+}
+h1{
+    color:white;
+    text-align: center;
+}
+label , input{
+    display:block;
+    color:yellow;
+    width:90%;
+    margin: auto;
+}
+label{
+    padding-top:5%;
+    padding-bottom:2%
+}
+#submit{
+    height:5vh;
+    background-color: yellow;
+    color:black;
+    margin-top:5vh;
+}

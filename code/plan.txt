@@ -1,0 +1,31 @@
+Task: Create a simple profile card.
+Requirements:
+    Use semantic HTML
+    Card centered on the page
+    Includes:
+    Profile image (circle)
+    Name (heading)
+    Short bio (paragraph)
+    Button (“Follow”)
+Use CSS for:
+    Box shadow
+    Border radius
+    Hover effect on the button
+Bonus: Use :hover to slightly lift the card.
+
+
+Task: Create a responsive navbar.
+Requirements:
+    Logo on the left
+    Navigation links on the right
+    Use Flexbox
+    On small screens:
+        Links stack vertically OR
+        Turn into a hamburger menu (CSS-only is fine)
+
+Task: Build a pricing section.
+Requirements:
+    3 pricing cards in a row (Flexbox or Grid)
+    One card marked as “Most Popular”
+    Different button styles for primary vs secondary plans
+    Fully responsive (no horizontal scroll on mobile)

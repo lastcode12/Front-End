@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function main(shape){
+            // document.getElementById("output").innerHTML = shape;
+            document.getElementById("title").innerHTML = "You've clicked <u><span style='background-color: yellow'>"+ shape +"</span></u>";
+        };
+        // function rectangle(){
+        //     document.getElementById("output").innerHTML= "Welcom to Rectangle";
+        // };
+        // function circle(){
+        //     document.getElementById("output").innerHTML= "Welcom to Circle";
+        // };
+        // function square(){
+        //     document.getElementById("output").innerHTML= "Welcom to Square";
+        // }
+    </script>
+    <style>
+    </style>
+</head>
+<body>
+    <img src="img/ps.png" width="700" alt ="laptop" usemap="#map">
+    <map name="map">
+        <area onclick="main(shape)" shape="Rectangle" coords="85,134,190,240" href="#rectangle">
+        <area onclick="main(shape)" shape="Circle" coords = "360,186,55" href="#circle">
+        <area onclick="main(shape)" shape="Square" coords= "508,136,585,243" href="#square">
+    </map>
+    <h1 id="title">  </h1>
+    <video src="video/1.mp4" controls display="block" type="video/mp4"></video>
+    <h1>PS PlayStation</h1>
+    <ul>
+        <li>Fun</li>
+        <li>Friends Gathering</li>
+        <li>Epic Exclusive Games</li>
+    </ul>
+    <dl>
+        <dt>PS4</dt>
+        <dd>Made for regular gamers with epic and suitable quality content</dd>
+        <dt>PS5</dt>
+        <dd>Made for pro gamers with high-quality content with interactive experience</dd>
+    </dl>
+    <h2>For more details see table below</h2>
+    <thead>
+        tr>td*
+    </thead>
+    <!-- <table width="366px" border="1">
+        <tr>
+            <th></th>
+            <th colspan="2">PS4</th>
+            <!-- <th></th> -->
+            <th colspan="2">PS5</th>
+            <!-- <th></th> -->
+        </tr>
+        <tr>
+            <td rowspan="3">type</td>
+            <td>Fat</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Slim</td>
+            <td>18</td>
+            <!-- <td>female</td> -->
+        </tr>
+        <tr>
+            <td>Pro</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2">total</td>
+            <td>2</td>
+        </tr>
+    </table>
+    <table width="366px" border="1">
+        <tr>
+            <th>name</th>
+            <th>phone</th>
+        </tr>
+        <tr>
+            <td rowspan="2">he</td>
+            <td>201231241412</td>
+        </tr>
+        <tr>
+            <td>201436788577</td>
+        </tr>
+    </table>
+</body>
+</html>

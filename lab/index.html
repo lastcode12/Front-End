@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            display: inline-block;
+        }
+        a{
+            margin: 10px;
+        }
+        li::after{
+            content:"|";
+            margin-left:10px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learn Web Development</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Front End</a></li>
+                <li><a href="#">BackEnd</a></li>
+                <li><a href="#">FullStack</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Front End Development</h2>
+            <article>
+                <p>The <strong>Front End</strong> is the part of a website that users see and interact with. 
+                it includes design, layout, and user experience.</p>
+            </article>
+            <p>
+                Common technologies: <mark>HTML</mark>, <mark>CSS</mark>, <mark>JavaScript</mark>
+            </p>
+        </section>
+        <section>
+            <h2>Back End Development</h2>
+            <article>
+                <p>
+                    The <strong>Back End</strong> works behind the scenes. it handles data databases and sever-side logic.
+                    <br>Common technologies: <mark>Python</mark>, <mark>Node.js</mark>, <mark>PHP</mark>.
+                </p>
+            </article>
+        </section>
+        <form>
+            <div>
+                <label for="input1">username</label>
+                <input type="text" name="username" id="input1" placeholder="ex.mohamed" required=True>
+            </div>
+            <div>
+                <label for="input2">password</label>
+                <input type="password" name="password" id="input2" placeholder="enter password" required=True>
+            </div>
+            <div>
+                <input type="radio" id="input3" name="gender" value="male">
+                <label for="input3">Male</label>
+                <input type="radio" id="input4" name="gender" value="female">
+                <label for="input4">Female</label>
+            </div>
+            <div>
+                <input type="checkbox" id="input5" name="skills" value="html">
+                <label for="input5">HTML</label>
+            </div>
+            <div>
+                <input type="checkbox" id="input6" name="skills" value="css">
+                <label for="input6">CSS</label>
+            </div>
+            <div>
+                <input type="checkbox" id="input7" name="skills" value="javascript">
+                <label for="input7">JavaScript</label>
+            </div>
+            <input type="submit">
+        </form>
+    </main>    
+    <footer>
+        <p>Created by Mohamed | &copy; 2025 Web Development</p>
+    </footer>
+</body>
+</html>
