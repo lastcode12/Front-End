@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Footer Example</title>
+
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
@@ -11,6 +12,7 @@
       padding: 0;
     }
 
+    /* Footer layout */
     .footer {
       display: flex;
       justify-content: space-around;
@@ -45,7 +47,7 @@
       text-decoration: underline;
     }
 
-    /* Blog posts section */
+    /* Blog post items */
     .blog-post {
       display: flex;
       align-items: center;
@@ -72,7 +74,7 @@
       font-size: 13px;
     }
 
-    /* Tags section */
+    /* Tag styles */
     .tags {
       display: flex;
       flex-wrap: wrap;
@@ -90,32 +92,26 @@
     .tag.active {
       background-color: black;
     }
-
-    @media (max-width: 768px) {
-      .footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-
-      .footer-section {
-        width: 90%;
-        margin-bottom: 30px;
-      }
-    }
   </style>
 </head>
+
 <body>
 
-  <div class="footer">
+  <footer class="footer">
+    <!-- Left: Text and credit -->
     <div class="footer-section">
       <h3>Footer</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>
+        Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
+        porta lectus vitae, ultricies congue gravida diam non fringilla.
+      </p>
       <p>Powered by <a href="#">w3.css</a></p>
     </div>
 
+    <!-- Middle: Blog posts -->
     <div class="footer-section">
       <h3>Blog Posts</h3>
+
       <div class="blog-post">
         <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="Blog Image 1">
         <div>
@@ -123,6 +119,7 @@
           <span>Sed mattis nunc</span>
         </div>
       </div>
+
       <div class="blog-post">
         <img src="https://www.w3schools.com/w3images/gondol.jpg" alt="Blog Image 2">
         <div>
@@ -132,6 +129,7 @@
       </div>
     </div>
 
+    <!-- Right: Popular tags -->
     <div class="footer-section">
       <h3>Popular Tags</h3>
       <div class="tags">
@@ -151,7 +149,7 @@
         <span class="tag">Duck</span>
       </div>
     </div>
-  </div>
+  </footer>
 
 </body>
 </html>
