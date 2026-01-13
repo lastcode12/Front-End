@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin:0;
+    background-color: black;
+}
+header{
+    background-color: white;
+}
+mark{
+    background-color: red;
+}
+h2{
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.container{
+    overflow:visible;
+    width:80%;
+    margin:auto;
+}
+.card{
+    background-color: white;
+    width:25%;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin:40px;
+    border:1px solid blue;
+}
+.card img{
+    width:100%;
+}
+.card p{
+    text-align: center;
+    font-size:large;
+    line-height: 3;
+}
+.card button{
+    background-color: black;
+    color:white;
+    border:none;
+    padding:15px;
+    margin-left: 10px;
+}

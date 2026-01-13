@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Card</title>
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pc6H6z0DdG1KfE5lZ1Sg7dX4A6cLQ6j1V1vD7x1KZr9N0x0F8p1j3k2K7T6E1eZ8m1H3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .patient-card {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        width: 350px;
+        padding: 20px;
+        transition: transform 0.2s;
+    }
+
+    .patient-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .patient-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .patient-avatar {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: #d9edf7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: #31708f;
+        margin-right: 15px;
+    }
+
+    .patient-info h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .patient-info p {
+        margin: 4px 0;
+        color: #666;
+        font-size: 0.95rem;
+    }
+
+    .patient-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .detail {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.95rem;
+        color: #555;
+    }
+
+    .detail i {
+        color: #31708f;
+        width: 20px;
+        text-align: center;
+    }
+
+    .status {
+        padding: 5px 10px;
+        border-radius: 12px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .status.active {
+        background-color: #d4edda;
+        color: #155724;
+    }
+
+    .status.inactive {
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+</style>
+</head>
+<body>
+
+<div class="patient-card">
+    <div class="patient-header">
+        <div class="patient-avatar">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="patient-info">
+            <h2>John Doe</h2>
+            <p>Age: 35</p>
+            <span class="status active">Active</span>
+        </div>
+    </div>
+    <div class="patient-details">
+        <div class="detail">
+            <i class="fas fa-venus-mars"></i> Male
+        </div>
+        <div class="detail">
+            <i class="fas fa-envelope"></i> john.doe@example.com
+        </div>
+        <div class="detail">
+            <i class="fas fa-phone"></i> +1 234 567 890
+        </div>
+        <div class="detail">
+            <i class="fas fa-map-marker-alt"></i> 123 Main St, Springfield
+        </div>
+        <div class="detail">
+            <i class="fas fa-notes-medical"></i> Blood Type: O+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

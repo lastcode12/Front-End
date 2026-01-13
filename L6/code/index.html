@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container{
+            width:50%;
+            position: absolute;
+        }
+        .container video{
+            width:100%;
+        }
+        .container h1 {
+            position:absolute;
+            top:50%;
+            box-sizing: border-box;
+            text-align: center;
+            left:0;
+            right:0;
+            background-color: white;
+            mix-blend-mode:screen;
+        } */
+        .parent{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            flex-direction: row;
+            height:100px;
+        }
+        #child1{
+            background-color: yellowgreen;
+            width:100px;
+        }
+        #child2{
+            background-color: rgb(50, 117, 205);
+            width:100px;
+        }
+        #child3{
+            background-color: rgb(205, 112, 50);
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <video src="1.mp4" autoplay muted></video>
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+    </div> -->
+    <div class="parent">
+        <div id="child1"></div>
+        <div id="child2"></div>
+        <div id="child3"></div>
+    </div>
+</body>
+</html>

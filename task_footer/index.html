@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Example</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 40px 0;
+      border-top: 1px solid #ccc;
+      background-color: #fff;
+    }
+
+    .footer-section {
+      width: 30%;
+    }
+
+    .footer-section h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .footer-section p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .footer-section a {
+      color: #555;
+      text-decoration: none;
+    }
+
+    .footer-section a:hover {
+      text-decoration: underline;
+    }
+
+    /* Blog posts section */
+    .blog-post {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .blog-post img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 3px;
+      object-fit: cover;
+    }
+
+    .blog-post div {
+      font-size: 14px;
+    }
+
+    .blog-post div span {
+      display: block;
+      color: #666;
+      font-size: 13px;
+    }
+
+    /* Tags section */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      background-color: #555;
+      color: white;
+      padding: 4px 8px;
+      font-size: 13px;
+      border-radius: 2px;
+    }
+
+    .tag.active {
+      background-color: black;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-section {
+        width: 90%;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="footer">
+    <div class="footer-section">
+      <h3>Footer</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="#">w3.css</a></p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Blog Posts</h3>
+      <div class="blog-post">
+        <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="Blog Image 1">
+        <div>
+          <strong>Lorem</strong>
+          <span>Sed mattis nunc</span>
+        </div>
+      </div>
+      <div class="blog-post">
+        <img src="https://www.w3schools.com/w3images/gondol.jpg" alt="Blog Image 2">
+        <div>
+          <strong>Ipsum</strong>
+          <span>Praes tici sed</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Popular Tags</h3>
+      <div class="tags">
+        <span class="tag active">Travel</span>
+        <span class="tag">New York</span>
+        <span class="tag">Dinner</span>
+        <span class="tag">Salmon</span>
+        <span class="tag">France</span>
+        <span class="tag">Drinks</span>
+        <span class="tag">Ideas</span>
+        <span class="tag">Flavors</span>
+        <span class="tag">Cuisine</span>
+        <span class="tag">Chicken</span>
+        <span class="tag">Dressing</span>
+        <span class="tag">Fried</span>
+        <span class="tag">Fish</span>
+        <span class="tag">Duck</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
