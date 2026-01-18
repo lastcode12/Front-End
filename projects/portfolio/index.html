@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Hany</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="side-section">
+        <div class="profile">
+            <div>
+                <img id="profile-img" src="assets/images/profile-img.jpg">
+                <h1 style="font-size: 24px;">Mohamed Hany</h1>
+            </div>
+            <div class="info-block">
+                <p class="heading">ABOUT</p>
+                <div class="item">
+                    <p class="lable">Full-Stack Developer with 7+ years of experience in building web and mobile apps.</p>
+                </div>
+            </div>
+            <div class="info-block">
+                <p class="heading">CONTACT</p>
+                <div class="item">
+                    <span class="icon material-symbols-outlined">mail</span>
+                    <p class="lable hover" id="copyText">mohamedhany1615@gmail.com</p>
+                    <!-- <span class="material-symbols-outlined" id="checkmark"></span> -->
+                    <span id="checkmark">Copied!</span>
+                </div>
+                <div class="item">
+                    <span class="icon material-symbols-outlined">language</span>
+                    <p class="lable hover">mohamedhany.com</p>
+                </div>
+                <div class="item">
+                    <span class="icon material-symbols-outlined">mobile_3</span>
+                    <p class="lable hover">+20 11-474-66-369</p>
+                </div>
+            </div>
+            <div class="info-block chip">
+                <p class="heading">SKILLS</p>
+                <div class="item chip">
+                    <p>JavaScript</p>
+                    <p>React</p>
+                    <p>.Net</p>
+                    <p>Python</p>
+                    <p>Git</p>
+                    <p>Agile</p>
+                    <p>Node.js</p>
+                    <p>MySQL</p>
+                    <p>AWS</p>
+                </div>
+            </div>
+            <div class="info-block chip">
+                <p class="heading">LANGUAGES</p>
+                <div class="item chip">
+                    <div>
+                        <span class="fi fi-eg"></span>
+                        <p>ARABIC</p>
+                    </div>
+                    <div>
+                        <span class="fi fi-us circle-flag"></span>
+                        <p>ENGLISH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile-content">
+            <div class="info-block">
+                <p class="heading">INTRO</p>
+                <p  class="item">A Full-Stack Developer specializing in backend development and automation.
+                   Helping teams build scalable systems that improve performance and reliability.
+                   A client-minded freelancer who delivers reliable results while proactively improving and adding value to every project.
+                </p>
+            </div>
+            <div class="info-block">
+                <p class="heading">PROJECTS</p>
+
+            </div>
+            <div class="info-block"> 
+                <p class="heading">EXPERIENCE</p>
+            </div>
+        </div>
+    </div>
+    <script>
+    const copyText = document.getElementById("copyText");
+    const checkmark = document.getElementById("checkmark");
+
+    copyText.addEventListener("click", () => {
+    // Copy text to clipboard
+    navigator.clipboard.writeText(copyText.textContent)
+        .then(() => {
+        // Show the checkmark
+        // checkmark.style.display = "inline";
+        checkmark.style.opacity = 1;
+
+        
+        // Hide it again after 2 seconds
+        setTimeout(() => {
+            checkmark.style.opacity = 0;
+        }, 1000);
+        })
+        .catch(err => {
+        console.error("Failed to copy text: ", err);
+        });
+    });
+    </script>
+</body>
+</html>

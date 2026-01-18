@@ -1,0 +1,127 @@
+::selection {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+::-moz-selection {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+body{
+    background-color: rgb(19, 19, 19);
+    /* padding:20px 0 0 0; */
+}
+* {
+    color:white;
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+}
+.side-section{
+    display: flex;
+    gap:50px;
+}
+.profile{
+    padding:20px;
+    /* border:1px solid red; */
+    width:30%;
+}
+.profile #profile-img{
+    width:72px;
+    border-radius: 50%;
+}
+.info-block{
+    margin-bottom:50px;
+    /* border: 1px solid red; */
+}
+.info-block:hover{
+    cursor: pointer;
+}
+.info-block .heading{
+    margin:0;
+    color:#7E7E7E;
+    margin-bottom: 10px;
+}
+.info-block .item{
+    display: flex;
+    /* border: 1px solid red; */
+    gap:10px;
+    margin:0;
+    margin-bottom: 5px;
+    padding:0;
+}
+.info-block .item .icon{
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    color:#7E7E7E
+}
+.info-block .item .lable.hover{
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    transition: color 0.2s ease-in;
+
+}
+.info-block .item .lable.hover:hover{
+    color:#7E7E7E;
+}
+.info-block .item .lable.hover:hover #checkmark{
+    opacity:1;
+    color: #7E7E7E;
+}
+#checkmark {
+    display: inline;
+    margin-left: 10px;
+    color: rgb(0, 172, 0);
+    font-size: 12px;
+    /* font-weight: bold; */
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
+.info-block .item.chip{
+    display: block;
+}
+.info-block .item.chip > p{
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding:5px 10px;
+    margin:3px 0;
+    transition: background-color 0.1s ease-in;
+    transition: border 0.1s ease-in;
+}
+.info-block .item.chip > p:hover{
+    background-color: rgba(255, 255, 255, 0.096);
+    border:1px solid rgba(255, 255, 255, 0.096);
+}
+.info-block .item.chip > div{
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding:5px;
+    margin:3px 0;
+    transition: background-color 0.1s ease-in;
+}
+.info-block .item.chip > div:hover{
+    background-color: rgba(255, 255, 255, 0.096);
+}
+.info-block .item.chip > div span{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.info-block .item.chip > div p{
+    display: inline-block;
+    margin:0;
+    /* padding:2px 0; */
+}
+.profile-content{
+    padding:40px;
+}
