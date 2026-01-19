@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html, body { display: flex; flex-direction: column; height: 100%; }
+        *{
+            font-family: 'arial';
+        }
+        body{
+            background-color: black;
+            margin:2px;
+        }
+        nav{
+            display: flex;
+            gap:20px;
+            background-color: #101113;
+            justify-content: center;
+            padding:5px;
+            box-sizing: border-box;
+            height: fit-content;
+        }
+        h2{
+            color:#CCA354;
+        }
+        h3{
+            color:white
+        }
+        nav i{
+            color:#CBA252;
+            font-size: 45px;
+        }
+        .container{
+            display: flex;
+            margin:0;
+            flex:1;
+        }
+        .container .image{
+            width:50%;
+        }
+        .container img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+        .container .form{
+            width:50%;
+            padding:20px;
+            box-sizing: border-box;
+        }
+        .container .form form .input{
+            display: flex;
+            flex-direction: row;
+            gap:20px;
+            margin-bottom:20px;
+            justify-content: space-between;
+        }
+        .container .form form input{
+            border: 1px solid #CCA354;
+            background-color: black;
+            height:50px;
+            width:100%;
+            padding:10px;
+            box-sizing: border-box;
+        }
+        .container .form form textarea{
+            border: 1px solid #CCA354;
+            background-color: black;
+            display: block;
+            width: 100%;
+            height:200px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            padding:10px;
+        }
+        .container .form form button{
+            border:none;
+            background-color: #CBA252;
+            padding:15px 20px;
+            border-radius: 10px;
+            
+        }
+        footer{
+            background-color: #101113;
+            padding:20px 0 0 0;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        footer h2{
+            margin:0 0 10px 20px;
+        }
+        footer .contact{
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            padding:10px 0;
+            gap:10px;
+        }
+        footer .contact .contact-card{
+            background-color: #CBA252;
+            padding:10px;
+            width:250px;
+        }
+        footer .contact .contact-card p{
+            margin-left:20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-solid fa-envelope"></i>
+    </nav>
+    <div class="container">
+        <div class="image">
+            <img src="https://a.c-dn.net/c/content/dam/publicsites/igcom/uk/images/news-article-image-folder/Adobe_Bitcoin_5210725.jpeg/jcr:content/renditions/original-size.webp">
+        </div>
+        <div class="form">
+            <h2>Contact</h2>
+            <h2>Get in touch</h2>
+            <h3>Leave us a message</h3>
+            <form>
+                <div class="input">
+                    <input type="text" placeholder="Full name">
+                    <input type="text" placeholder="Your email">
+                </div>
+                <textarea placeholder="your message"></textarea>
+                <button type="submit">send message</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h2>Support</h2>
+            <h2>You can get all information</h2>
+        </div>
+        <div class="contact">
+            <div class="contact-card">
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>Call Us</p>
+                <p>+2010418487<br>048252845</p>
+            </div>
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Mail Us</p>
+                <p>moahmed@gmail.com<br>mohamed_hany@gmail.com</p>
+            </div>
+            <div class="contact-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Visit Us</p>
+                <p>#65 Street 1265</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
