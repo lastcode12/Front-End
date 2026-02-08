@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            font-family: 'arial';
+        }
+        body{
+            margin:0;
+            background-image:url("1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        nav{
+            display: flex;
+            width: 100%;
+            height: fit-content;
+            background-color: white;
+            height:50px;
+        }
+        ul{
+            display: flex;
+            gap:20px;
+            list-style: none;
+            font-size: 22px;
+            padding: 0 20px;
+            margin: 0;
+        }
+        ul li{
+            margin: 0;
+            padding: 0;
+            align-self: center;
+        }
+        #logo{
+            background-color: #F44336;
+            width: 130px;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap:20px;
+            justify-content: center;
+            font-size: 22px;
+            color:white
+        }
+        #logo p,i{
+            margin: 0;
+            align-self: center;
+        }
+        #nav-btn{
+            border:none;
+            background-color: rgb(211, 211, 211);
+            border-radius: 5px;
+            position: absolute;
+            right:0;
+            height:50px;
+            width:fit-content;
+            padding: 0 20px;
+            font-size: 22px;
+        }
+        .container{
+            background-color: white;
+            display:flex;
+            flex-direction: column;
+            width:30%;
+            gap:20px;
+            border-radius: 10px;
+        }
+        .container .lable{
+            display: flex;
+            gap:10px;
+            font-size: 22px;
+            background-color: #F44336;
+            margin: 0;
+            padding: 0;
+            width:100%;
+            border-radius: 10px 10px 0 0;
+            color:white;
+            padding:0 10px;
+            box-sizing: border-box;
+        }
+        .container button{
+            width:200px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .input{
+            display: flex;
+            flex-wrap: wrap;
+            gap:10px;
+            padding:0 10px;
+        }
+        .input .input_item{
+            width:45%;
+        }
+        .input .input_item h3{
+            margin:0;
+            padding: 0;
+        }
+        .input .input_item input{
+            width:100%;
+            height:50px;
+            padding: 0 0 0 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <i class="fa-solid fa-bed"></i>
+            <p>Logo</p>
+        </div>
+        <ul>
+            <li>Rooms</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <button id="nav-btn">Book Now</button>
+    </nav>
+    <div class="container">
+        <div class="lable">
+            <i class="fa-solid fa-bed"></i>
+            <h2>Hotel Name</h2>
+        </div>
+        <div class="input">
+            <div class="input_item">
+                <h3><i class="fa-regular fa-calendar"></i> Check In</h3>
+                <input type="date">
+            </div>
+            <div class="input_item">
+                <h3><i class="fa-regular fa-calendar"></i> Check In</h3>
+                <input type="date">
+            </div>
+            <div class="input_item">
+                <h3><i class="fa-solid fa-person"></i> Adults</h3>
+                <input type="date">
+            </div>
+            <div class="input_item">
+                <h3><i class="fa-solid fa-child-reaching"></i> Kids</h3>
+                <input type="date">
+            </div>
+        </div>
+        <button>
+            Search availability
+        </button>
+    </div>
+</body>
+</html>
